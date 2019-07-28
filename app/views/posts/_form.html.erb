@@ -1,0 +1,12 @@
+<%# To indicate that this file is a partial (and only part of a larger view), an underscore is prefixed to the filename. %>
+<%#We could have named the partial whatever we wanted to. The only requirements are that it start with an underscore and that references to the partial are made without the underscore.%>
+<%# When referencing a partial from a different folder,  %>
+<%# we must include the folder name as well (e.g., <%= render 'posts/form' %>
+<%# as opposed to <%= render 'form' %>
+
+<label>Post title:</label><br>
+<%= text_field_tag :title, @post.title %><br>
+
+<label>Post Description</label><br>
+<%= text_area_tag :description, @post.description %><br>
+<%= submit_tag "Submit Post" %>
